@@ -1,0 +1,104 @@
+:root {
+    --primary: #575757;
+    --blue-heading: #29ABB7;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+}
+
+h2 {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    color: var(--blue-heading);
+}
+
+.trips, .unique-skills, .steps {
+    margin: 0 8vw;
+}
+
+.destinations {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2vw;
+    text-align: center;
+}
+.destination {
+    /* border: 1px solid black; */
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    color: white;
+}
+#aus {
+    background-image: url('images/australia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -200px 200px 0px rgba(0, 69, 77, 0.493);
+}
+#mad {
+    background-image: url('images/madives.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    box-shadow: inset 0px -200px 200px 0px rgba(72, 77, 0, 0.507);
+}
+#tan {
+    background-image: url('images/tanzania.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -200px 200px 0px rgba(77, 59, 0, 0.527);   
+}
+#tha {
+    background-image: url('images/thailand.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    box-shadow: inset 0px -200px 200px 0px rgba(0, 74, 77, 0.507);  
+}
+.destination-infos {
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+}
+.destination img {
+    max-width: 100%;
+}
+.destination h3 {
+    font-size: 14px;
+}
+.description {
+    font-size: 12px;
+}
+.destination i {
+    margin-right: 0.25rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+    h2 {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 400;
+    }
+
+    .destinations {
+        text-align: left;
+    }
+    .destination {
+        height: 400px;
+    }
+    .destination h3 {
+        font-size: 16px;
+    }
+
+}
