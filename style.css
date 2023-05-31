@@ -22,6 +22,8 @@ h2 {
     margin: 0 8vw;
 }
 
+/* ----------------------------------PREMIERE SECTION */
+
 .destinations {
     margin-top: 5vh;
     display: grid;
@@ -83,6 +85,39 @@ h2 {
     margin-right: 0.25rem;
 }
 
+
+/* ----------------------------------DEUXIEME SECTION */
+
+.unique-skills {
+    margin-top: 10vh;
+}
+.unique-skills h3 {
+    color: var(--blue-heading);
+}
+.skills {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh 0;
+}
+.skills-visual img {
+    width: 100%;
+    height: auto;
+}
+.one-skill {
+    margin: 6vh 0;
+    display: flex;
+    flex-direction: column;
+}
+.one-skill .image, .one-skill h3 {
+    text-align: center;
+}
+.one-skill p {
+    text-align: left;
+}
+
+/* -------------------------------------RESPONSIVE */
+
 @media only screen and (min-width: 600px) {
 
     h2 {
@@ -99,6 +134,29 @@ h2 {
     }
     .destination h3 {
         font-size: 16px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+    .one-skill {
+        flex-direction: row;
+        text-align: center;
+        gap: 0 5vw;
+    }
+    .one-skill .image, .one-skill h3 {
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .skills {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0 5vw;
     }
 
 }
