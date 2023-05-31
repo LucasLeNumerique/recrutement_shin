@@ -4,9 +4,11 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     color: var(--primary);
 }
 
@@ -14,7 +16,7 @@ h2 {
     text-align: left;
     font-size: 30px;
     font-family: 'Kalam', cursive;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--blue-heading);
 }
 
@@ -22,7 +24,7 @@ h2 {
     margin: 0 8vw;
 }
 
-/* ----------------------------------PREMIERE SECTION */
+/* ----------------------------------PREMIÈRE SECTION */
 
 .destinations {
     margin-top: 5vh;
@@ -86,7 +88,7 @@ h2 {
 }
 
 
-/* ----------------------------------DEUXIEME SECTION */
+/* ----------------------------------DEUXIÈME SECTION */
 
 .unique-skills {
     margin-top: 10vh;
@@ -116,6 +118,37 @@ h2 {
     text-align: left;
 }
 
+/* ----------------------------------TROISIÈME SECTION */
+
+.invoice-hero {
+    position: relative;
+    margin: 5vh 0;
+    height: fit-content;
+    padding: 2vh 8vw;
+    color: white;
+    background-color: var(--blue-heading);
+}
+.invoice-request {
+    margin: 5vh 0;
+    padding: 1rem 3rem;
+    background-color: var(--blue-heading);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.circle-one, .circle-two {
+    display: none;
+}
+.invoice-image {
+    display: none;
+}
+
+/* ----------------------------------QUATRIÈME SECTION */
+
+
+
 /* -------------------------------------RESPONSIVE */
 
 @media only screen and (min-width: 600px) {
@@ -123,19 +156,18 @@ h2 {
     h2 {
         text-align: center;
         font-size: 42px;
-        font-weight: 400;
     }
 
     .destinations {
         text-align: left;
     }
     .destination {
-        height: 400px;
+        height: 350px;
     }
     .destination h3 {
         font-size: 16px;
     }
-
+/* -------------------------------------------- */
     .skills {
         display: flex;
         flex-direction: column;
@@ -158,5 +190,45 @@ h2 {
         grid-template-columns: 50% 50%;
         gap: 0 5vw;
     }
-
+/* -------------------------------------------- */
+    .invoice-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20vh 0;
+        width: 40%;
+        height: 400px;
+    }
+    .circle-one, .circle-two {
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 10px solid white;
+        border-radius: 200px;
+    }
+    .circle-one {
+        bottom: 0;
+        right: -5%;
+        z-index: 2;
+    }
+    .circle-two {
+        bottom: 15%;
+        right: -12%;
+        z-index: 2;
+    }
+    .invoice-image {
+        display: block;
+        position: absolute;
+        top: -25%;
+        right: -50%;
+        z-index: 1;
+        width: 700px;
+        height: auto;
+        border: 10px solid white;
+        border-radius: 5px;
+    }
+    .invoice-image img {
+        width: 100%;
+    }
 }
